@@ -1,0 +1,101 @@
+report_id,report_date,serious_case,result_in_death,country,patient_age,patient_sex,drug_name,drug_indication,side_effects
+5801206-7,20080707,Yes,Yes,CANADA,26,Male,DURAGESIC-100,DRUG ABUSE,"DRUG ADMINISTRATION ERROR, OVERDOSE"
+10003300,20140306,Yes,No,US,77,Female,BONIVA,OSTEOPOROSIS,"Vomiting, Diarrhoea, Arthralgia, Headache"
+10003301,20140228,Yes,No,US,,Female,IBUPROFEN,PRODUCT USED FOR UNKNOWN INDICATION,"Dyspepsia, Renal impairment"
+10003302,20140312,Unknown,No,US,,Male,LYRICA,,Drug ineffective
+10003304,20140312,Unknown,No,US,,Female,DOXYCYCLINE HYCLATE,,Drug hypersensitivity
+10003305,20140312,Unknown,No,US,48,Female,LIPITOR,,Drug hypersensitivity
+10003306,20140312,Unknown,No,US,68,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,"Cough, Throat irritation"
+10003307,20140312,Unknown,No,US,65,Female,LETAIRIS,PULMONARY HYPERTENSION,Rhinorrhoea
+10003308,20140312,Unknown,No,US,59,Female,LETAIRIS,PULMONARY HYPERTENSION,"Unevaluable event, Malaise"
+10003309,20140312,Unknown,No,US,42,Male,LETAIRIS,SLEEP APNOEA SYNDROME,Hepatic enzyme increased
+10003310,20140312,Unknown,No,US,66,Female,LYRICA,,Back pain
+10003311,20140312,Yes,No,US,76,Female,LETAIRIS,PULMONARY HYPERTENSION,"Oedema peripheral, Fluid retention"
+10003312,20140312,Yes,No,US,43,Female,ILARIS,CRYOPYRIN ASSOCIATED PERIODIC SYNDROME,"Pneumonia, Drug ineffective"
+10003313,20140312,Unknown,No,US,81,Female,LETAIRIS,CHRONIC OBSTRUCTIVE PULMONARY DISEASE,"Swelling, Jaundice"
+10003314,20140312,Unknown,No,US,82,Male,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,Back pain
+10003315,20140312,Yes,Yes,US,,Male,RANOLAZINE,ANGINA PECTORIS,Death
+10003316,20140312,Unknown,No,US,73,Female,LETAIRIS,COR PULMONALE CHRONIC,"Oedema, Fatigue, Dyspnoea exertional, Fluid retention"
+10003317,20140312,Yes,No,US,46,Male,BENLYSTA,SYSTEMIC LUPUS ERYTHEMATOSUS,"Angioedema, Laryngeal oedema, Face oedema"
+10003318,20140312,Yes,Yes,BR,59,Female,BELIMUMAB,SYSTEMIC LUPUS ERYTHEMATOSUS,Tuberculosis of central nervous system
+10003319,20140312,Yes,No,US,46,Female,BENLYSTA,SYSTEMIC LUPUS ERYTHEMATOSUS,"Cholecystectomy, Nephrolithiasis, Biliary tract disorder, Malaise"
+10003320,20140312,Unknown,No,US,42,Male,TYVASO,,"Headache, Hypotension"
+10003321,20140312,Yes,No,JP,71,Male,ACETAMINOPHEN.,,"Adenoviral haemorrhagic cystitis, Pyrexia"
+10003322,20140312,Unknown,No,US,61,Female,LETAIRIS,PULMONARY HYPERTENSION,Tremor
+10003323,20140312,Unknown,No,US,73,Female,PRADAXA,ATRIAL FIBRILLATION,"Fall, Pain in extremity, Hiccups"
+10003324,20140312,Unknown,No,US,57,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,"Malaise, Ocular hyperaemia"
+10003325,20140312,Yes,No,US,68,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,Swelling
+10003326,20140312,Yes,No,CN,29,Female,CEFTRIAXONE,LISTERIOSIS,"Meconium stain, Amniotic cavity infection, Maternal exposure during pregnancy"
+10003327,20140312,Yes,No,CN,53,Male,PREDNISONE,IMMUNOSUPPRESSION,"Respiratory failure, Listeriosis, Pyrexia, Headache, Vomiting, Mental status changes, Meningitis, Pneumonia staphylococcal"
+10003328,20140312,Yes,No,ES,55,Female,PACLITAXEL,METASTASES TO BREAST,"Type IV hypersensitivity reaction, Skin toxicity, Palmar-plantar erythrodysaesthesia syndrome, Nail toxicity, Arthralgia, Myalgia, Asthenia, Diarrhoea, Neuropathy peripheral"
+10003329,20140312,Yes,No,COUNTRY NOT SPECIFIED,79,Female,PARACETAMOLO,PAIN,"Diarrhoea, Abdominal pain, Asthenia, Diarrhoea, Weight decreased, Abdominal pain, Blood creatinine increased, C-reactive protein increased, Dysuria, Pyrexia, Blood creatinine increased, C-reactive protein increased, Pleural effusion"
+10003330,20140312,Unknown,No,US,50,Male,LETAIRIS,PULMONARY HYPERTENSION,Feeling abnormal
+10003331,20140312,Yes,No,GB,38,Female,MIRENA,,"Chemical poisoning, Neck pain, Back pain, Paraesthesia"
+10003332,20140312,Unknown,No,US,80,Male,PRADAXA,CEREBROVASCULAR ACCIDENT PROPHYLAXIS,"Proctalgia, Anorectal discomfort, Rectal haemorrhage"
+10003333,20140312,Unknown,No,US,79,Male,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,Swelling
+10003334,20140312,Unknown,No,US,,Female,SPIRIVA,EMPHYSEMA,"Dry mouth, Product quality issue"
+10003335,20140312,Yes,No,US,62,Female,LETAIRIS,PULMONARY HYPERTENSION,"Localised oedema, Oedema peripheral, Fluid retention, Nasal congestion"
+10003336,20140312,Yes,Yes,US,,Male,JANUMET,TYPE 2 DIABETES MELLITUS,"Metastases to spine, Anxiety, Renal cyst, Metastases to thorax, Metastases to retroperitoneum, Emotional disorder, Pancreatic carcinoma metastatic, Metastases to liver, Metastases to lung, Emotional distress, Lymphadenopathy, Prostate cancer, Peripheral venous disease"
+10003337,20140312,Unknown,No,US,59,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,"Dysphonia, Throat irritation"
+10003338,20140312,Yes,No,IT,34,Female,KLACID,TONSILLITIS,"Swollen tongue, Pruritus, Rash generalised"
+10003339,20140312,Unknown,No,US,69,Male,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,Anaemia
+10003340,20140312,Yes,No,CN,22,Female,PREDNISONE,IMMUNOSUPPRESSION,"Listeriosis, Pyrexia, Diarrhoea, Meningitis"
+10003341,20140312,Unknown,No,US,54,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,"Dizziness, Oedema, Dyspnoea"
+10003342,20140312,Yes,No,US,,Male,TASIGNA,LEUKAEMIA,"Overdose, General physical health deterioration, Malaise, Drug ineffective"
+10003343,20140312,Unknown,No,US,64,Female,LETAIRIS,PORTOPULMONARY HYPERTENSION,"Liver function test abnormal, Liver disorder"
+10003344,20140312,Unknown,No,US,69,Female,LETAIRIS,PULMONARY HYPERTENSION,Headache
+10003345,20140312,Yes,No,DK,88,Female,CITALOPRAM,,"Haematoma, Thrombocytopenia, International normalised ratio increased"
+10003346,20140312,Unknown,No,US,73,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,"Dyspnoea, Hypoxia"
+10003347,20140312,Yes,No,US,29,Female,MIRENA,CONTRACEPTION,Device dislocation
+10003348,20140312,Unknown,No,US,93,Male,OXYGEN.,,"Epistaxis, Cough, Nasal dryness, Nasal congestion, Haemoptysis, Asthenia"
+10003349,20140312,Yes,No,US,,Female,MORPHINE SULFATE EXTENDED-RELEASE TABLETS (RHODES 74-862),,"Cerebrovascular accident, Blood pressure increased, Pain"
+10003350,20140312,Unknown,No,US,71,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,"Malaise, Gingivitis"
+10003351,20140312,Yes,No,GB,46,Female,MIRTAZAPINE (UNKNOWN),DEPRESSION,"Aggression, Violence-related symptom, Anger, Blepharospasm, Suicidal ideation"
+10003352,20140312,Unknown,No,US,51,Female,LETAIRIS,SCLERODERMA,Oedema peripheral
+10003353,20140312,Unknown,No,US,,Male,CASODEX,,"Dyspnoea, Drug ineffective"
+10003354,20140312,Yes,No,US,52,Female,LETAIRIS,PULMONARY ARTERIAL HYPERTENSION,Haemoglobin decreased
+10003355,20140312,Unknown,No,US,,Male,CASODEX,,Heart rate decreased
+10003356,20140312,Unknown,No,US,60,Female,LETAIRIS,PULMONARY HYPERTENSION,Oedema peripheral
+10003357,20140312,Yes,No,US,10,Male,TACROLIMUS (WATSON LABORATORIES),HEART TRANSPLANT,"Posterior reversible encephalopathy syndrome, Cerebral haemorrhage, Subarachnoid haemorrhage"
+10003358,20140312,Unknown,No,US,82,Male,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,Dyspnoea
+10003359,20140312,Yes,No,GB,41,Male,DOXYCYCLINE,PRODUCT USED FOR UNKNOWN INDICATION,Erection increased
+10003360,20140312,Unknown,No,US,29,Female,LETAIRIS,PULMONARY HYPERTENSION,Hypertension
+10003361,20140312,Yes,No,GB,65,Male,CITALOPRAM (UNKNOWN),DEPRESSION,Hyponatraemia
+10003362,20140312,Unknown,No,US,71,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,"Gastric disorder, Dyspnoea"
+10003363,20140312,Unknown,No,US,50,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,Unevaluable event
+10003364,20140312,Unknown,No,US,31,Female,ADCIRCA,,"Drug hypersensitivity, Pruritus, Rash"
+10003365,20140312,Unknown,No,US,71,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,"Oedema, Fluid retention"
+10003366,20140312,Unknown,No,US,32,Male,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,Oedema
+10003367,20140312,Unknown,No,US,70,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,"Unevaluable event, Eructation, Chest discomfort"
+10003368,20140312,Unknown,No,US,78,Male,LETAIRIS,PULMONARY HYPERTENSION,"Pollakiuria, Poor quality sleep, Dyspnoea"
+10003369,20140312,Unknown,No,US,73,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,Feeling abnormal
+10003370,20140312,Unknown,No,US,64,Female,LETAIRIS,PULMONARY HYPERTENSION,Swelling
+10003371,20140312,Unknown,No,US,51,Male,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,"Nasal congestion, Seasonal allergy"
+10003372,20140312,Unknown,No,US,49,Male,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,Nausea
+10003373,20140312,Unknown,No,US,65,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,Nasal congestion
+10003375,20140312,Yes,No,CN,53,Female,PREDNISONE,IMMUNOSUPPRESSION,"Loss of consciousness, Listeriosis, Pyrexia, Headache, Vomiting, Meningitis"
+10003376,20140312,Unknown,No,US,62,Male,CASODEX,PROSTATE CANCER METASTATIC,"Diarrhoea, Arthralgia, Nausea"
+10003377,20140312,Unknown,No,US,59,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,"Malaise, Weight fluctuation"
+10003378,20140312,Unknown,No,US,53,Male,LETAIRIS,PULMONARY ARTERIAL HYPERTENSION,"Dyspnoea, Tremor, Bone pain, Presyncope"
+10003379,20140312,Unknown,No,US,55,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,Nasopharyngitis
+10003380,20140312,Unknown,No,US,67,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,"Respiratory tract infection, Body temperature, Pneumonia, Productive cough"
+10003381,20140312,Unknown,No,US,76,Male,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,No therapeutic response
+10003382,20140312,Unknown,No,US,57,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,Blood count abnormal
+10003383,20140312,Unknown,No,US,63,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,Unevaluable event
+10003384,20140312,Unknown,No,US,75,Male,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,Unevaluable event
+10003385,20140312,Unknown,No,US,79,Female,LETAIRIS,,"Dyspnoea exertional, Fatigue"
+10003386,20140312,Yes,No,US,72,Female,LETAIRIS,,"Fluid retention, Haemoglobin decreased"
+10003387,20140312,Unknown,No,US,67,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,Cellulitis
+10003388,20140312,Unknown,No,US,19,Female,LETAIRIS,PULMONARY ARTERIAL HYPERTENSION,"Dyspnoea, Dyspnoea exertional, Oedema"
+10003389,20140312,Unknown,No,US,32,Female,LETAIRIS,PULMONARY ARTERIAL HYPERTENSION,Hepatic enzyme decreased
+10003390,20140312,Unknown,No,US,44,Female,LETAIRIS,PULMONARY ARTERIAL HYPERTENSION,"Headache, Dyspnoea, Diarrhoea, Increased appetite, Swelling, Weight increased, Vomiting"
+10003391,20140312,Unknown,No,US,75,Female,LETAIRIS,PULMONARY ARTERIAL HYPERTENSION,Dyspnoea
+10003392,20140312,Yes,No,CA,77,Male,RAMIPRIL.,HYPERTENSION,Subdural haematoma
+10003393,20140312,Unknown,No,US,53,Male,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,Peripheral swelling
+10003394,20140312,Unknown,No,US,88,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,Dyspnoea exertional
+10003395,20140312,Unknown,No,US,,Male,DEPAKOTE,BIPOLAR DISORDER,"Tremor, Dry mouth"
+10003396,20140312,Unknown,No,US,62,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,Unevaluable event
+10003397,20140312,Yes,No,DK,25,Male,CITALOPRAM ORAL SOLUTION,INTENTIONAL SELF-INJURY,"Sopor, Drug abuse, Overdose"
+10003398,20140312,Yes,No,GB,77,Male,DONEPEZIL,DEMENTIA,"Hallucination, visual, Headache, Insomnia, Somnolence, Confusional state"
+10003399,20140312,Unknown,No,US,56,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,"Headache, Dizziness exertional, Haemoglobin decreased, Dyspnoea"
+10003400,20140312,Unknown,No,US,65,Female,LETAIRIS,PRODUCT USED FOR UNKNOWN INDICATION,"Hot flush, Rosacea"
