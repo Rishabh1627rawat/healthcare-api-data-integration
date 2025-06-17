@@ -1,64 +1,84 @@
-# 🩺 Health Integration Project with Snowflake & dbt
+🩺 HealthCare Data Integration & Analytics Pipeline
+This project is an end-to-end data integration and analytics pipeline for healthcare data. It processes real-world FDA drug reports, automates ingestion using Python, models the data with dbt, and stores it in Snowflake for scalable analytics. The goal is to simulate how healthcare platforms can clean, organize, and gain insights from complex, semi-structured medical data in an automated fashion.
 
-This project focuses on integrating, processing, and modeling healthcare-related data—specifically FDA drug reports—using **Snowflake** for scalable storage, **Python** for automation, and **dbt** for transformation logic and data modeling.
+📌 Problem Statement
+In the healthcare domain, regulatory data like FDA reports is often messy, semi-structured (JSON), and underutilized. Stakeholders—including researchers, public health analysts, and pharma companies—struggle to derive meaningful insights due to:
 
----
+Inconsistent data formats (CSV, JSON)
 
-## ✅ Project Goals
+Complex nested structures
 
-- Ingest and store FDA drug data in CSV and JSON (NDJSON) formats.
-- Automate the data pipeline using Python and Snowflake connectors.
-- Transform and model data with **dbt** (data build tool).
-- Build a modular, cloud-based data stack for healthcare analytics.
+No change tracking over time
 
----
+Lack of modular pipelines to manage ingestion, transformation, and analytics
 
-## 📁 Folder Structure
+🎯 Goal
+Build a reliable healthcare data pipeline that:
 
-health-integration-project/
-├── data/
-│ └── processed/
-│ ├── fda_cleaned.csv # Cleaned CSV data
-│ └── fda.json # Raw FDA report JSON (NDJSON)
-├── dbt_project/
-│ ├── models/
-│ │ ├── staging/ # Staging layer models
-│ │ ├── marts/ # Analytics-ready models
-│ │ └── sources/ # Source definitions
-│ ├── dbt_project.yml # dbt config
-│ └── snapshots/ # Future snapshots
-├── pipeline.py # Python script to automate ingestion
-└── README.md # Project documentation
+Ingests FDA drug reports in JSON and CSV formats
 
-markdown
+Stores and manages structured + semi-structured data in Snowflake
+
+Transforms raw data into analytics-ready tables using dbt
+
+Tracks data changes and enriches insights for healthcare decision-makers
+
+📌 Project Architecture
+Data source: FDA adverse event drug report datasets
+
+Local data cleaning and format conversion (CSV & NDJSON)
+
+Python pipeline for automation and Snowflake ingestion
+
+Data modeling using dbt (source → staging → marts)
+
+Future extensions: snapshots, enrichment, and dashboarding
+
+🔍 What Business Problems This Solves
+❌ Problem	✅ Solution
+Unstructured FDA data (JSON, CSV)	Python preprocessing + NDJSON formatting
+No central store for drug reports	Snowflake-based warehousing (structured + VARIANT support)
+Difficulty analyzing side effects by drug/region	dbt models with filters, joins, and regional aggregations
+No version control of reports	Plan for dbt Snapshots to track changes
+Manual ingestion and loading	Python automation using Snowflake Connector
+
+🧠 Technologies Used
+Area	Tool/Tech
+Data Ingestion	Python (snowflake-connector-python)
+Storage	Snowflake
+Modeling	dbt
+File Formats	CSV, JSON (NDJSON), VARIANT
+CLI Tools	SnowSQL
+Automation	Python scripts
+Visualization (Planned)	Tableau / Power BI
+
+📊 Core Features / Models
+Model/File Name	Purpose
+drug_listing_fda	Main table for structured CSV report data
+json_data_fda	Table for storing raw NDJSON using VARIANT
+stg_drug_listing_fda.sql	dbt staging model: cleaned & typed version of the raw data
+marts/ (planned)	Business insights: side effects by drug/region
+snapshots/ (planned)	Historical tracking of drug safety reports
+
+📥 Data Loading Progress
+✅ CSV Upload to Snowflake
+
+Stage Created: @drug_stage
+
+File Format: CSV with headers
+
+Table: drug_listing_fda
+
+Load Command:
+
+sql
 Copy
 Edit
+COPY INTO drug_listing_fda
+FROM @drug_stage/fda_cleaned.csv.gz
+FILE_FORMAT = (TYPE = 'CSV' FIELD_OPTIONALLY_ENCLOSED_BY = '"' SKIP_HEADER = 1);
+✅ NDJSON Upload to Snowflake
 
----
-
-## 🔧 Technologies Used
-
-- **Snowflake** – Cloud Data Warehouse for storage & analytics
-- **Python** – Automation with `snowflake-connector-python`
-- **SnowSQL** – CLI tool to upload local files to Snowflake stages
-- **dbt (data build tool)** – SQL-based transformation and modeling framework
-- **File Formats** – CSV, JSON (NDJSON), VARIANT for semi-structured data
-
----
-
-## 📥 Data Loading Progress
-
-### ✅ CSV Upload to Snowflake
-
-- **Stage Created:** `@drug_stage`
-- **File Uploaded:** `fda_cleaned.csv`
-- **Table Created:** `drug_listing_fda`
-- **Data Loaded With:**
-  ```sql
-  COPY INTO drug_listing_fda
-  FROM @drug_stage/fda_cleaned.csv.gz
-  FILE_FORMAT = (TYPE = 'CSV' FIELD_OPTIONALLY_ENCLOSED_BY = '"' SKIP_HEADER = 1);
-✅ JSON Upload to Snowflake (Using VARIANT)
 Table Created:
 
 sql
@@ -67,27 +87,46 @@ Edit
 CREATE OR REPLACE TABLE json_data_fda (
   raw_json VARIANT
 );
-File Format: Newline-delimited JSON (NDJSON)
+File Format: NDJSON (1 JSON object per line)
 
-Loaded using COPY INTO after uploading via PUT
+Loaded using:
 
+sql
+Copy
+Edit
+COPY INTO json_data_fda
+FROM @drug_stage/fda.json
+FILE_FORMAT = (TYPE = 'JSON');
 🛠 Python Automation (pipeline.py)
-Connects to Snowflake using snowflake-connector-python
+Feature	Description
+🔗 Snowflake Connector	Uses snowflake-connector-python for ingestion
+🗃 File Validation	Checks schema and format before upload
+🚀 Upload & Load Automation	Automates PUT & COPY INTO Snowflake stage
+🧾 Logging	Logs success/failure and errors for each run
 
-Automates file upload and loading into respective tables
+🔧 dbt Work
+✅ Project Setup
 
-Handles logging of success/failure
+Initialized using: dbt init health_integration_dbt
 
-Validates data file structure before ingestion
+Configured Snowflake connection in profiles.yml
 
-🧠 dbt Work
-✅ Initialized dbt project: dbt init health_integration_dbt
+✅ Source Definitions
 
-✅ Configured Snowflake connection via profiles.yml
+Defined in: sources.yml
 
-✅ Added source definition in sources.yml
+Example:
 
-✅ Created staging model: stg_drug_listing_fda.sql
+yaml
+Copy
+Edit
+sources:
+  - name: raw
+    database: HEALTHCARE
+    schema: DRUG_LISTINGS
+    tables:
+      - name: drug_listing_fda
+✅ Staging Model: stg_drug_listing_fda.sql
 
 sql
 Copy
@@ -102,31 +141,54 @@ SELECT
   side_effects
 FROM {{ source('raw', 'drug_listing_fda') }}
 🔜 Next Steps
- Build marts/ models for analytical insights (e.g., side effects by region)
 
- Define tests and documentation in schema.yml
+Create marts models for:
 
- Implement snapshots to track changes over time
+Side effects by drug
 
- Schedule dbt jobs using Airflow or dbt Cloud
+Report count by region/time
 
- Visualize results using Tableau or Power BI
+Add schema tests and documentation
 
- Enrich data with external drug metadata
+Build snapshots to track updates over time
 
-❗ Tips & Notes
-NDJSON Format: Ensure each JSON record is on a new line before ingestion.
+Integrate dbt Cloud or Airflow for scheduling
 
-File Removal (if needed):
-
-sql
+📂 Folder Structure
+bash
 Copy
 Edit
-REMOVE @drug_stage/fda_cleaned.csv.gz;
-Monitor pipeline.py logs for ingestion issues or schema mismatches.
+health-integration-project/
+│
+├── data/
+│   └── processed/
+│       ├── fda_cleaned.csv         # Cleaned CSV data
+│       └── fda.json                # NDJSON-formatted JSON reports
+│
+├── dbt_project/
+│   ├── models/
+│   │   ├── sources/
+│   │   ├── staging/
+│   │   └── marts/                  # Future models
+│   ├── snapshots/                  # Future snapshots
+│   └── dbt_project.yml
+│
+├── pipeline.py                     # Python ingestion & upload script
+└── README.md                       # Project documentation
+✅ Project Timeline & Progress
+Week	Focus Area	Status
+1	CSV/JSON Ingestion + Snowflake Upload	✅ Completed
+2	Python Pipeline & Automation	✅ Completed
+3	dbt Staging + Source Models	✅ In Progress
+4	dbt Marts + Snapshots + Dashboarding	⏳ Upcoming
+5	Airflow Scheduling + Visual Demos	❌ Not Started
 
-🙋 Author
-Rishabh Rawat
-Passionate about real-world healthcare data engineering using Snowflake, Python, and dbt.
-Always learning. Always building. 🚀
-Build a reliable, automated integration system for multi-source healthcare data.
+📸 Screenshots & Demo (Coming Soon)
+Dashboard screenshots and model preview snapshots will be shared once the marts and visualization layers are finalized.
+
+👨‍💻 Author
+Rishabh Rawat – Passionate about real-world healthcare data engineering using Snowflake, Python, and dbt.
+
+GitHub: github.com/Rishabh1627rawat
+
+LinkedIn: (Add your profile link)
