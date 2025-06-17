@@ -169,23 +169,8 @@ health-integration-project/
 │
 ├── pipeline.py                     # Python ingestion & upload script
 └── README.md                       # Project documentation
-✅ Project Timeline & Progress
-Week	Focus Area	Status
-1	CSV/JSON Ingestion + Snowflake Upload	✅ Completed
-2	Python Pipeline & Automation	✅ Completed
-3	dbt Staging + Source Models	✅ In Progress
-4	dbt Marts + Snapshots + Dashboarding	⏳ Upcoming
-5	Airflow Scheduling + Visual Demos	❌ Not Started
 
-📸 Screenshots & Demo (Coming Soon)
-Dashboard screenshots and model preview snapshots will be shared once the marts and visualization layers are finalized.
 
-👨‍💻 Author
-Rishabh Rawat – Passionate about real-world healthcare data engineering using Snowflake, Python, and dbt.
-
-GitHub: github.com/Rishabh1627rawat
-
-LinkedIn: (Add your profile link)
 =======
 ```
 
@@ -239,5 +224,5 @@ Dashboard screenshots and model preview snapshots will be shared once the marts 
 **Rishabh Rawat** – Passionate about real-world healthcare data engineering using Snowflake, Python, and dbt.
 
 - GitHub: [github.com/Rishabh1627rawat](https://github.com/Rishabh1627rawat)
-- LinkedIn: (Add your profile link)
->>>>>>> c6135e9 (Updated README with detailed project documentation)
+- LinkedIn: (www.linkedin.com/in/rishabh-rawat-6921b017a)
+
