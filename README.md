@@ -1,4 +1,6 @@
 🩺 HealthCare Data Integration & Analytics Pipeline
+
+
 This project is an end-to-end data integration and analytics pipeline for healthcare data. It processes real-world FDA drug reports, automates ingestion using Python, models the data with dbt, and stores it in Snowflake for scalable analytics. The goal is to simulate how healthcare platforms can clean, organize, and gain insights from complex, semi-structured medical data in an automated fashion.
 
 📌 Problem Statement
